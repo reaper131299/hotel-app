@@ -1,0 +1,28 @@
+.home_page-poster {
+  height: 100vh;
+  background-image: url("/assets/pexels-viktoria-alipatova-2074130.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_page-button {
+  padding: 10px 25px;
+  border: 2px solid white;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.home_page-button a {
+  color: white;
+  text-decoration: none;
+}

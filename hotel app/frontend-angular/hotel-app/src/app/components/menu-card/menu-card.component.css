@@ -1,0 +1,55 @@
+.btn-yello {
+  border-radius: 0%;
+  flex-grow: 1;
+  border: none;
+  color: black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.box {
+  padding: 0 5px 0 5px;
+  display: flex;
+}
+
+.food-catagory {
+  margin: 20px 0;
+}
+
+.menu_item-description {
+  max-height: 50px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.menu_item-heading {
+  background-color: rgba(33, 37, 41, 255);
+  padding: 15px 25px;
+  display: flex;
+  align-content: center;
+  color: rgba(155, 157, 151, 255);
+}
+
+.menu_item {
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card-title {
+  margin: 0;
+}
+
+.menu-list {
+  padding: 0 15px;
+}
+
+.card:hover {
+  cursor: inherit;
+}
+
+.h5 {
+  margin: 0;
+}
+
+.menu-page {
+  background-color: rgba(250, 250, 250, 255);
+}

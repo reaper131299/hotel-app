@@ -1,0 +1,11 @@
+.cart-page {
+  margin: 30px;
+}
+
+.btn-yello {
+  border-radius: 0%;
+  flex-grow: 1;
+  border: none;
+  color: black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}

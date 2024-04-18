@@ -1,0 +1,32 @@
+<div class="cart-page">
+  <div class="text-center" style="padding: 20px 0">
+    <h1 class="h2">Your Cart</h1>
+  </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Menu</th>
+        <th>Quantity</th>
+        <th>price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let carItem of cartItems">
+        <td>{{ carItem.menuItem.itemName }}</td>
+        <td>{{ carItem.quantity }}</td>
+        <td>{{ carItem.menuItem.price }}</td>
+        <td>
+          <a
+            (click)="deleteItem(carItem.cartEntryId)"
+            type="submit"
+            class="btn btn-outline-warning btn-yello"
+            role="button"
+            >Remove</a
+          >
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="display-4">Total:- {{ totalPrice }}</h2>
+</div>

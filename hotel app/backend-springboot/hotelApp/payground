@@ -1,0 +1,9 @@
+{
+    "userId": 1,
+    "contactNumber": "9682112831",
+    "customerName": "Norris Calderon",
+    "emailId": "NorrisCalderon@example.com",
+    "password": "pokemon",
+    "addresses": [],
+    "carts": []
+}

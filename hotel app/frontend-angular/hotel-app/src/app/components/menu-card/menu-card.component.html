@@ -1,0 +1,66 @@
+<div class="menu-page">
+  <div class="text-center" style="padding: 20px 0">
+    <h1 class="h2">Discover Our Exclusive Menu</h1>
+  </div>
+  <div class="food-catagory">
+    <div class="row justify-content-center">
+      <div class="col col-lg-2 box">
+        <button
+          (click)="getMenuItems()"
+          class="btn btn-outline-warning btn-yello"
+        >
+          All
+        </button>
+      </div>
+      <div class="col col-lg-2 box">
+        <button
+          (click)="getMenuByCaterogy('Main')"
+          class="btn btn-outline-warning btn-yello"
+        >
+          Main Course
+        </button>
+      </div>
+      <div class="col col-lg-2 box">
+        <button
+          (click)="getMenuByCaterogy('desert')"
+          class="btn btn-outline-warning btn-yello"
+        >
+          Deserts
+        </button>
+      </div>
+      <div class="col col-lg-2 box">
+        <button
+          (click)="getMenuByCaterogy('drinks')"
+          class="btn btn-outline-warning btn-yello"
+        >
+          Drinks
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="menu-list">
+    <div class="row justify-content-center">
+      <div *ngFor="let menuItem of menuItems" class="col-sm-6">
+        <div class="card menu_item">
+          <div class="menu_item-heading d-flex justify-content-between">
+            <h5 class="card-title">{{ menuItem.itemName }}</h5>
+            <p class="h5">{{ menuItem.price }}/-</p>
+          </div>
+          <div class="card-body">
+            <div class="menu_item-description">
+              <p class="card-text">
+                {{ menuItem.description }}
+              </p>
+            </div>
+            <button
+              (click)="addItemToCart(menuItem.menuId)"
+              class="btn btn-outline-warning btn-yello"
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
